@@ -1,0 +1,1 @@
+I'm working on replicating a Figma design using React, ensuring that I adhere to professional best practices throughout the process.
