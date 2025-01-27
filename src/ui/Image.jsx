@@ -15,6 +15,6 @@ const Image = ({ src, alt, className, ...props }) => {
     </div>
   );
 };
-Image.propTypes = { src: "string", alt: "string", className: "string" };
+// Image.propTypes = { src: "string", alt: "string", className: "string" };
 
 export default Image;

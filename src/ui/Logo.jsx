@@ -1,5 +1,5 @@
 import appLogo from "../data/images/Header/logo.png";
-import logoText from "../data/images/Header/lalasia.png";
+import logoText from "../data/images/Header/Lalasia.png";
 import { Link } from "react-router-dom";
 import Image from "./Image";
 function Logo() {
