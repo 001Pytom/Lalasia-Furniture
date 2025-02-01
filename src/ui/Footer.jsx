@@ -32,21 +32,26 @@ const footerLinks = [
 
 function Footer() {
   return (
-    <div className=" flex flex-col lg:flex-row justify-between items-center py-5 border-t  border-neutral-border">
+    <div className=" flex flex-col sm:flex-row justify-between sm:items-center gap-4 md:gap-0 py-3 md:py-5 border-t  border-neutral-border">
       <div>
         <Logo />
-        <p className=" font-sans font-medium text-lg">
-          Lalasia is digital agency that help you make better <br /> experience
-          iaculis cras in.
+        <p className=" font-sans font-medium text-sm md:text-base lg:text-lg mt-1 md:mt-0 ">
+          Lalasia is digital agency that help you make better
+          <br className="hidden sm:block" /> experience iaculis cras in.
         </p>
       </div>
-      <div className="flex gap-20    ">
+      <div className="flex gap-10 sm:gap-14 xl:gap-20  justify-between sm:justify-start ">
         {footerLinks.map((link) => (
           <div key={link.title} className="mt-10 ">
-            <h4 className="font-sans font-bold text-xl ">{link.title}</h4>
-            <ul className="mt-6 space-y-5">
+            <h4 className="font-sans font-bold text-base lg:text-lg xl:text-xl  ">
+              {link.title}
+            </h4>
+            <ul className="mt-6 space-y-3 md:space-y-5">
               {link.titleList.map((item) => (
-                <li key={item.label} className="font-sans font-medium text-lg">
+                <li
+                  key={item.label}
+                  className="font-sans font-medium text-sm md:text-base lg:text-lg"
+                >
                   <Link to={item.to}>{item.label}</Link>
                 </li>
               ))}

@@ -8,14 +8,14 @@ function SectionFive() {
     <div className="my-10 py-10 flex flex-col items-center  gap-[14px]">
       <div className="text-center space-y-4">
         <MiniHeading smallText="Testimonials" BigText="What our customer say" />
-        <p className="text-neutral-textParagraph max-w-[656px]  font-sans text-lg font-medium  text-center">
+        <p className="text-neutral-textParagraph max-w-[656px]  font-sans text-sm md:text-base lg:text-lg font-medium  text-center">
           Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
           placerat nisi, adipiscing mauris non purus parturient.
         </p>
       </div>
       {/* Testimonials */}
       <div>
-        <div className="grid grid-cols-3 gap-10 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
           {customerTestimonials.map((testimony, index) => (
             <div
               key={index}
@@ -24,14 +24,14 @@ function SectionFive() {
               <div>
                 <img src={qouteIcon} alt="qouteIcon" />
               </div>
-              <p className="text-neutral-textParagraph max-w-[656px]  font-sans text-lg font-medium  ">
+              <p className="text-neutral-textParagraph max-w-[656px]  font-sans text-sm md:text-base lg:text-lg font-medium  ">
                 {testimony.testimony}
               </p>
 
               <div className="flex justify-between">
                 <div className="flex items-center gap-2">
                   <img src={testimony.icon} alt="icon" />
-                  <p className="font-bold text-neutral text-[20px]">
+                  <p className="font-bold text-neutral text-sm md:text-base lg:text-[20px]">
                     {testimony.userName}
                   </p>
                 </div>

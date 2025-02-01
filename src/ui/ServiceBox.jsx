@@ -1,9 +1,7 @@
-import { servicesList } from "../utils/helpers";
-
 function ServiceBox({
   className,
   data,
-  wrapperClassName = "w-full flex justify-between items-center gap-10",
+  wrapperClassName = "w-full flex flex-col lg:flex-row justify-between items-center gap-10 ",
   renderContent,
 }) {
   return (
@@ -31,8 +29,10 @@ function Image({ src, alt }) {
 function Text({ title, description }) {
   return (
     <div className="flex flex-col gap-[26px]">
-      <h3 className="fonts-sans font-bold text-2xl ">{title}</h3>
-      <p className="fonts-sans font-medium text-lg text-neutral-textParagraph">
+      <h3 className="fonts-sans font-bold text-base   sm:text-xl xl:text-2xl ">
+        {title}
+      </h3>
+      <p className="fonts-sans font-medium text-base  md:text-lg  text-neutral-textParagraph">
         {description}
       </p>
     </div>

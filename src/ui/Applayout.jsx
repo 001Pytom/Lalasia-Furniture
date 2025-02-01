@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 function Applayout() {
   return (
-    <div className="lg:px-24  pb-8 font-sans">
+    <div className="px-6 md:px-12 lg:px-24  pb-8 font-sans">
       <Header />
       <main>
         <Outlet />

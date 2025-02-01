@@ -4,7 +4,7 @@ function Button({ children, size = "lg", variant = "primary" }) {
   const sizeClasses = {
     sm: " p-[10px] text-center text-sm font-medium",
     md: "p-[21px]",
-    lg: "px-[30px] py-[15px] text-center text-lg font-bold",
+    lg: "px-[15px] lg:px-[30px] py-[15px] text-center text-lg font-bold",
   };
 
   const variantClasses = {
@@ -17,7 +17,7 @@ function Button({ children, size = "lg", variant = "primary" }) {
     " text-sans inline-flex items-center justify-center gap-[10px] ";
   return (
     <button
-      className={`${baseClass} ${sizeClasses[size]} ${variantClasses[variant]}`}
+      className={`${baseClass} ${sizeClasses[size]} ${variantClasses[variant]} w-full md:w-auto `}
     >
       {children}
     </button>

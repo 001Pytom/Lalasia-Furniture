@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/navigation"; 
+import "swiper/css/navigation";
 import { useState } from "react";
 
 // import Slider from "../features/HomePage/Slider";
@@ -47,17 +47,18 @@ function HomePage() {
         </div>
 
         <Swiper
-          slidesPerView={4} // Number of slides visible
-          spaceBetween={20} // Spacing between slides
+          slidesPerView={1.2}
+          spaceBetween={20}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
-          modules={[Navigation]} // Include Navigation module
+          modules={[Navigation]}
           breakpoints={{
-            640: { slidesPerView: 1 }, // 1 slide on small screens
-            768: { slidesPerView: 2 }, // 2 slides on medium screens
-            1024: { slidesPerView: 4 }, // 4 slides on large screens
+            640: { slidesPerView: 1.5 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 3.5 },
           }}
           onSlideChange={handleSlideChange}
           onInit={(swiper) => handleSlideChange(swiper)}
@@ -106,49 +107,13 @@ function HomePage() {
             <Image src={smArrowRight} alt="smArrowRight" />
           </div>
         </Swiper>
-        {/* <Slider
-          slidesPerView={4}
-          spaceBetween={20}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
-          }}
-          // className="flex mt-10 mb-20"
-        >
-          {projects.map((project) => (
-            <Slider.Slide
-              key={project.id}
-              // className="space-y-[26px]  w-[394px]"
-            >
-              <Image src={project.image} alt={project.title} />
-              <div className="space-y-[14px]">
-                <h5 className="font-bold text-lg text-neutral-textParagraph">
-                  {project.title}
-                </h5>
-                <div className="space-y-[6px]">
-                  <h3 className="font-bold text-[26px] tracking-[1%] text-neutral">
-                    {project.Heading}
-                  </h3>
-                  <p className="text-neutral-textParagraph font-medium text-lg">
-                    {project.description}
-                  </p>
-                </div>
-                <h3 className="text-neutral text-2xl font-bold">
-                  {project.price}
-                </h3>
-              </div>
-            </Slider.Slide>
-          ))}
-          <Slider.MyNavigation prevIcon={smArrowLeft} nextIcon={smArrowRight} />
-        </Slider> */}
       </div>
 
       <SectionFour />
 
       <SectionFive />
 
-      <SectionSix />
+      {/* <SectionSix /> */}
 
       <Contact
         text="Join with me to get special discount"

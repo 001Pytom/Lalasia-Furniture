@@ -14,7 +14,7 @@ function SectionOne() {
           className="absolute -bottom-16  -left-40"
         />
 
-        <h1 className="font-sans font-bold text-[64px] text-neutral  relative">
+        <h1 className="font-sans font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[64px] text-neutral  relative">
           Discover Furniture With <br /> High Quality Wood
           <Image
             src={SketchStar}
@@ -22,7 +22,7 @@ function SectionOne() {
             className="absolute -bottom-1 -right-5 lg:bottom-10 lg:right-0"
           />
         </h1>
-        <p className="font-sans font-medium text-sm lg:text-lg text-neutral-textParagraph  my-6  px-5 ">
+        <p className="font-sans font-medium text-sm md:text-base lg:text-lg text-neutral-textParagraph  my-6  px-5 ">
           Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
           placerat nisi, adipiscing mauris non. Purus parturient viverra nunc,
           tortor sit laoreet. Quam tincidunt aliquam adipiscing tempor.

@@ -10,7 +10,7 @@ import { articlesList } from "../../utils/helpers";
 
 function SectionSix() {
   return (
-    <div className="my-10 py-10 flex gap-10 w-full  justify-between">
+    <div className="my-10 py-10 flex flex-col lg:flex-row items-center lg:items-start  gap-10 w-full  justify-between">
       <div className="space-y-8 ">
         <MiniHeading
           smallText="Articles"
