@@ -113,7 +113,7 @@ function HomePage() {
 
       <SectionFive />
 
-      {/* <SectionSix /> */}
+      <SectionSix />
 
       <Contact
         text="Join with me to get special discount"

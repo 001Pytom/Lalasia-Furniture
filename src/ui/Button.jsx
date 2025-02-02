@@ -2,8 +2,8 @@ import Image from "./Image";
 
 function Button({ children, size = "lg", variant = "primary" }) {
   const sizeClasses = {
-    sm: " p-[10px] text-center text-sm font-medium",
-    md: "p-[21px]",
+    sm: "p-[10px] text-center text-sm font-medium",
+    md: "p-[10px] md:p-[21px]",
     lg: "px-[15px] lg:px-[30px] py-[15px] text-center text-lg font-bold",
   };
 
